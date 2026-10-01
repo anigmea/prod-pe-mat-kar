@@ -1,0 +1,25 @@
+{
+  "name": "prod-pe-mat-kar",
+  "version": "0.1.0",
+  "description": "Bhai, that is production. An explicit-config pre-command gate.",
+  "type": "module",
+  "author": "anigmea",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./src/index.js",
+  "bin": {
+    "prod-pe-mat-kar": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  }
+}
